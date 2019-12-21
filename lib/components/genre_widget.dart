@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
 
-import '../constants.dart';
+import '../theme/constants.dart';
 
 class GenreWidget extends StatelessWidget {
   final String genreType;

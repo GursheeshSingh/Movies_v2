@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:movies_v2/screens/home_page_2.dart';
-import 'package:movies_v2/widgets/genre_widget.dart';
-import 'package:movies_v2/widgets/movie_title.dart';
-import 'package:movies_v2/widgets/rating_bar.dart';
+import 'package:movies_v2/components/rating_bar.dart';
 
-import '../constants.dart';
+import 'genre_widget.dart';
+import 'movie_title.dart';
 
 class MovieCardContent extends StatelessWidget {
   final String moviePath;

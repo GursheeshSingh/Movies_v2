@@ -1,19 +1,12 @@
 import 'dart:core';
-import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:movies_v2/constants.dart';
-import 'package:movies_v2/model/movie_data.dart';
+import 'package:movies_v2/components/background_images.dart';
+import 'package:movies_v2/components/buy_button.dart';
+import 'package:movies_v2/components/movie_card.dart';
+import 'package:movies_v2/models/movie_data.dart';
 import 'package:movies_v2/screens/page_item.dart' as prefix0;
-import 'package:movies_v2/widgets/background_images.dart';
-import 'package:movies_v2/widgets/buy_button.dart';
-import 'package:movies_v2/widgets/genre_widget.dart';
-import 'package:movies_v2/widgets/movie_card.dart';
-import 'package:movies_v2/widgets/movie_title.dart';
-import 'package:movies_v2/widgets/rating_bar.dart';
-
-import '../main.dart';
 
 final List<Movie> movies = [
   Movie(movieName: 'Good Boys', moviePath: 'images/good_boys.jpg'),

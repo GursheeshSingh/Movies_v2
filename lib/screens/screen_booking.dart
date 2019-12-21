@@ -2,13 +2,10 @@ import 'dart:math';
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:flutter/material.dart' as prefix0;
-import 'package:flutter/scheduler.dart';
-import 'package:movies_v2/constants.dart';
-import 'package:movies_v2/model/Seat.dart';
-import 'package:movies_v2/my_flutter_app_icons.dart';
-import 'package:movies_v2/widgets/animated_counter.dart';
-import 'package:movies_v2/widgets/buy_button.dart';
+import 'package:movies_v2/components/animated_counter.dart';
+import 'package:movies_v2/models/Seat.dart';
+import 'package:movies_v2/theme/constants.dart';
+import 'package:movies_v2/theme/my_flutter_app_icons.dart';
 import 'package:video_player/video_player.dart';
 
 class ScreenBooking extends StatefulWidget {

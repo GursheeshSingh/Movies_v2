@@ -1,7 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:movies_v2/constants.dart';
+import 'package:movies_v2/theme/constants.dart';
 
 class RatingBar extends StatelessWidget {
   final rating;

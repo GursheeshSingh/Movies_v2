@@ -1,7 +1,6 @@
 
 import 'package:flutter/material.dart';
-
-import '../model/movie_data.dart';
+import 'package:movies_v2/models/movie_data.dart';
 
 class BackgroundImages extends StatefulWidget {
   BackgroundImages({

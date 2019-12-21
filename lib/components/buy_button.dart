@@ -1,10 +1,9 @@
 import 'dart:ui';
-import 'dart:ui' as prefix0;
 
 import 'package:flutter/material.dart';
 import 'package:movies_v2/screens/screen_booking.dart';
 
-import '../constants.dart';
+import '../theme/constants.dart';
 
 class BuyButton extends StatefulWidget {
   final Function onPressed;

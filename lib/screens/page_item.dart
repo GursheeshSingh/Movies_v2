@@ -3,12 +3,12 @@ import 'dart:core';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:movies_v2/constants.dart';
-import 'package:movies_v2/widgets/actor_widget.dart';
-import 'package:movies_v2/widgets/buy_button.dart';
-import 'package:movies_v2/widgets/genre_widget.dart';
-import 'package:movies_v2/widgets/movie_title.dart';
-import 'package:movies_v2/widgets/rating_bar.dart';
+import 'package:movies_v2/components/actor_widget.dart';
+import 'package:movies_v2/components/buy_button.dart';
+import 'package:movies_v2/components/genre_widget.dart';
+import 'package:movies_v2/components/movie_title.dart';
+import 'package:movies_v2/components/rating_bar.dart';
+import 'package:movies_v2/theme/constants.dart';
 
 import 'home_page_2.dart';
 

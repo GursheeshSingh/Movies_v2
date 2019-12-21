@@ -1,12 +1,11 @@
-import 'dart:async';
 import 'dart:core' as prefix0;
 import 'dart:core';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:movies_v2/custom_scroll.dart';
-import 'package:movies_v2/screens/home_page_2.dart';
 import 'package:flutter/scheduler.dart' show timeDilation;
+import 'package:movies_v2/screens/home_page_2.dart';
+import 'package:movies_v2/sevices/custom_scroll.dart';
 
 void main() => runApp(MyApp());
 

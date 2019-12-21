@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:movies_v2/constants.dart';
+import 'package:movies_v2/theme/constants.dart';
 
 class MovieTitle extends StatelessWidget {
   const MovieTitle({
