@@ -3,7 +3,6 @@ import 'dart:core';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart' show timeDilation;
 import 'package:movies_v2/screens/home_page_2.dart';
 import 'package:movies_v2/sevices/custom_scroll.dart';
 
@@ -12,7 +11,6 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    timeDilation = 3.0;
     return MaterialApp(
       home: MyHomePage2(),
     );

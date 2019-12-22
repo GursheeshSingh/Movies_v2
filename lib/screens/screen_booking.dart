@@ -11,14 +11,11 @@ import 'package:video_player/video_player.dart';
 class ScreenBooking extends StatefulWidget {
   @override
   _ScreenBookingState createState() => _ScreenBookingState();
-
-  static RectTween _createRectTween(Rect begin, Rect end) {
-    return QuadraticOffsetTween(begin: begin, end: end);
-  }
 }
 
 class _ScreenBookingState extends State<ScreenBooking>
     with TickerProviderStateMixin {
+
   List<Seat> _seatingPlan;
   static const seatPrice = 1.2;
   int _bookedSeats = 0;
@@ -37,7 +34,7 @@ class _ScreenBookingState extends State<ScreenBooking>
     _animationController = AnimationController(
         vsync: this,
         duration: Duration(
-          milliseconds: 500,
+          seconds: 2,
         ))
       ..addListener(() {
         setState(() {});
@@ -77,6 +74,7 @@ class _ScreenBookingState extends State<ScreenBooking>
         children: <Widget>[
           Hero(
             tag: 'blackBox',
+            createRectTween: _createRectTween,
             child: Container(
               color: Colors.black,
               width: mediaQuery.size.width,
@@ -124,13 +122,16 @@ class _ScreenBookingState extends State<ScreenBooking>
                 ],
               ),
             ),
-            createRectTween: ScreenBooking._createRectTween,
           ),
           _buildAppbar(),
           _buildPayButton(context)
         ],
       ),
     );
+  }
+
+  static RectTween _createRectTween(Rect begin, Rect end) {
+    return QuadraticOffsetTween(begin: begin, end: end);
   }
 
   _buildScreen() {
@@ -328,8 +329,6 @@ class QuadraticOffsetTween extends RectTween {
 
   @override
   Rect lerp(double t) {
-    if (t == 0.0) return begin;
-    if (t == 1.0) return begin;
 
     final Offset center = MaterialPointArcTween(
       begin: begin.center,

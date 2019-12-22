@@ -52,9 +52,14 @@ class _BuyButtonState extends State<BuyButton> with TickerProviderStateMixin {
       if (status == AnimationStatus.completed) {
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) {
-            return ScreenBooking();
-          }),
+          PageRouteBuilder(
+            pageBuilder: (_, __, ___) {
+              return ScreenBooking();
+            },
+            transitionDuration: Duration(
+              seconds: 1,
+            ),
+          ),
         );
       }
     });
@@ -92,6 +97,7 @@ class _BuyButtonState extends State<BuyButton> with TickerProviderStateMixin {
         },
         child: Hero(
           tag: 'blackBox',
+          transitionOnUserGestures: false,
           flightShuttleBuilder: (
             BuildContext flightContext,
             Animation<double> animation,

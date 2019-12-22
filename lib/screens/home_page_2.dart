@@ -78,9 +78,9 @@ class _MyHomePage2State extends State<MyHomePage2>
     return Container(
       alignment: Alignment.bottomCenter,
       margin: EdgeInsets.all(8),
-      child: BuyButton(onPressed: (){
-
-      },),
+      child: BuyButton(
+        onPressed: () {},
+      ),
     );
   }
 
@@ -89,10 +89,13 @@ class _MyHomePage2State extends State<MyHomePage2>
 
     Navigator.push(
       context,
-      MaterialPageRoute(
-        builder: (context) {
+      PageRouteBuilder(
+        pageBuilder: (_, __, ___) {
           return prefix0.PageItem(num: index);
         },
+        transitionDuration: Duration(
+          seconds: 1,
+        ),
         fullscreenDialog: true,
       ),
     );
