@@ -1,16 +1,17 @@
-# movies_v2
+#Movies 2.0
 
-A new Flutter application.
+Based on - https://dribbble.com/shots/8257559-Movie-2-0
 
-## Getting Started
+##Related blog:
 
-This project is a starting point for a Flutter application.
+[For Buy Button animation](https://medium.com/@singhgursheesh12/customize-hero-animation-flutter-83f6a35c79d4)
 
-A few resources to get you started if this is your first Flutter project:
+[For stars animation](https://medium.com/@singhgursheesh12/customize-hero-animation-part-2-flutter-4a5b67ee2037)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+##Screenshots
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Main Screen]( screenshots/mainscreen.gif "Main Screen")
+
+![Movie Description]( screenshots/moviedescription.gif "Movie Description")
+
+![Buy button]( screenshots/buybutton.gif "Buy Button")
